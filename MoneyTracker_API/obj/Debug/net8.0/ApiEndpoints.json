@@ -1,0 +1,127 @@
+[
+  {
+    "ContainingType": "MoneyTracker_API.Controllers.CategoryAPIController",
+    "Method": "GetCategories",
+    "RelativePath": "api/CategoryApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker_API.Controllers.CategoryAPIController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/CategoryApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MoneyTracker_API.DTOs.CategoryCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker_API.Controllers.CategoryAPIController",
+    "Method": "GetCategory",
+    "RelativePath": "api/CategoryApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker_API.Controllers.CategoryAPIController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/CategoryApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MoneyTracker_API.DTOs.CategoryUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker_API.Controllers.CategoryAPIController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/CategoryApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker_API.Controllers.CategoryAPIController",
+    "Method": "GetExpenseParentCategories",
+    "RelativePath": "api/CategoryApi/Expense",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker_API.Controllers.CategoryAPIController",
+    "Method": "GetIncomeParentCategories",
+    "RelativePath": "api/CategoryApi/Income",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker_API.Controllers.CategoryAPIController",
+    "Method": "GetSubCategoriesForParent",
+    "RelativePath": "api/CategoryApi/parent/{parentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker_API.Controllers.CategoryAPIController",
+    "Method": "GetParentCategories",
+    "RelativePath": "api/CategoryApi/parents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
