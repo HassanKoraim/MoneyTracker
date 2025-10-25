@@ -16,5 +16,8 @@ namespace MoneyTracker_API.DTOs
         public string? Description { get; set; }
 
         public int? ParentCategoryId { get; set; }
+
+        public List<CategoryCreateDto> SubCategories { get; set; } = new List<CategoryCreateDto>();
+
     }
 }

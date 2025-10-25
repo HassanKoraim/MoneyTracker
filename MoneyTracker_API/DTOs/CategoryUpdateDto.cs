@@ -8,7 +8,6 @@ namespace MoneyTracker_API.DTOs
         public CategoryType Type { get; set; }
         public string? Description { get; set; }
         public int? ParentCategoryId { get; set; }
-        public string? ParentCategoryName { get; set; }
-        public List<CategoryDto> SubCategories { get; set; } = new List<CategoryDto>();
+        public List<CategoryUpdateDto> SubCategories { get; set; } = new List<CategoryUpdateDto>();
     }
 }
