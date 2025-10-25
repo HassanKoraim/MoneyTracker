@@ -13,6 +13,16 @@ namespace MoneyTracker_API.Repositroies
         {
             _context = context;
         }
+
+        public async Task<bool> CategoryExists(string categoryName, SD.CategoryType categoryType)
+        {
+            bool isExist =
+                await _context.Categories
+                    .Where(c => c.Name.ToLower() == categoryName.ToLower()
+                    && c.Type == categoryType).AnyAsync();
+            return isExist;
+        }
+
         public async Task<List<Category>> GetParentCategories()
         {
             List<Category> categories = await _context.Categories
@@ -25,6 +35,11 @@ namespace MoneyTracker_API.Repositroies
             List<Category> categories = await _context.Categories
                .Where(c => c.Type == type && c.ParentCategoryId == null).ToListAsync();
             return categories;
+        }
+
+        public Task<List<Category>> GetParentCategoriesByType(SD.CategoryType? type)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<List<Category>> GetSubCategoriesByParentId(int parentCategoryId)

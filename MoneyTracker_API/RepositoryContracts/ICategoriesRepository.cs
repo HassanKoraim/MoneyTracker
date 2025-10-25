@@ -7,6 +7,7 @@ namespace MoneyTracker_API.RepositoryContracts
     {
       Task<List<Category>> GetParentCategories(); 
       Task<List<Category>> GetSubCategoriesByParentId(int parentCategoryId);
-      Task<List<Category>> GetParentCategoriesByType(CategoryType type);
+      Task<List<Category>> GetParentCategoriesByType(CategoryType? type);
+      Task<bool> CategoryExists(string categoryName, CategoryType categoryType);
     }
 }
