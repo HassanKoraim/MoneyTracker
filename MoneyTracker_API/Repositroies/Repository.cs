@@ -30,6 +30,12 @@ namespace MoneyTracker_API.Repositroies
             int rowsDeleted = await _context.SaveChangesAsync();
             return rowsDeleted > 0;
         }
+        public async Task<bool> DeleteRange(IEnumerable<T> entities)
+        {
+            _dbset.RemoveRange(entities);
+            int rowsDeleted = await _context.SaveChangesAsync();
+            return rowsDeleted > 0;
+        }
 
         public async Task<T> Get(Expression<Func<T, bool>> filter = null, string? includeProperties = null)
         {

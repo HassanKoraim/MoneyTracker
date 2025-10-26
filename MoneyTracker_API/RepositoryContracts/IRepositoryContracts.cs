@@ -16,7 +16,8 @@ namespace MoneyTracker_API.RepositoryContracts
         // Create operations
         Task<T> Create(T entity);
         // Delete operations
-        Task<bool> Delete(T entity); 
+        Task<bool> Delete(T entity);
+        Task<bool> DeleteRange(IEnumerable<T> entities);
 
     }
 }
