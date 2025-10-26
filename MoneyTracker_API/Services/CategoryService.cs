@@ -181,7 +181,20 @@ namespace MoneyTracker_API.Services
 
         public async Task<bool> DeleteCategory(int id)
         {
-            Category? category = await _repo.Get(c => c.Id == id);
+            if(id <= 0)
+            {
+                return false;
+            }
+            Category? category = await _repo.Get(c => c.Id == id, includeProp: "SubCategories");
+            if(category == null)
+            {
+                return false;
+            }
+            if(category.SubCategories != null && category.SubCategories.Any())
+            {
+                await _repo.DeleteRange(category.SubCategories);
+               
+            }
             return await _repo.Delete(category);
         }
     }
