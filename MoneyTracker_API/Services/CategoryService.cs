@@ -19,34 +19,22 @@ namespace MoneyTracker_API.Services
             _repo = repo;
             _mapper = mapper;
         }
-
-        public async Task<CategoryDto> CreateCategory(CategoryCreateDto categoryCreateDto)
-        {
-            var category = _mapper.Map<Category>(categoryCreateDto);
-            Category categoryFromCreate = await _repo.Create(category);
-            CategoryDto dto = _mapper.Map<CategoryDto>(categoryFromCreate);
-            return dto;
-        }
-
-        public async Task<List<CategoryDto>?> GetAllCategories() 
+        public async Task<List<CategoryDto>> GetAllCategories() 
         {
             var list = await _repo.GetAll();
-            if(list == null)
+            if(list == null || !list.Any())
             {
-                return null;
+                return new List<CategoryDto>();
             } 
-            List<CategoryDto> categories = _mapper.Map<List<CategoryDto>>(list);
+            List<CategoryDto> categories =
+                _mapper.Map<List<CategoryDto>>(list);
             return categories;
         }   
-
-        /*public async Task<List<CategoryDto>> GetAllSubCategoriesForParentCat(int ParentCatId)
-        {
-           List<Category> subCategories =
-                await _repo.GetAll(c => c.ParentCategoryId == ParentCatId);
-            List<CategoryDto> sunCategoriesDto = _mapper.Map<List<CategoryDto>>(subCategories);
-            return sunCategoriesDto;
-        }*/
-
+        /// <summary>
+        /// To Return Category Type, Parent Category or SubCategory 
+        /// </summary>
+        /// <param name="id">This give id Parameter</param>
+        /// <returns>Return Category Type, Parent Category or SubCategory</returns>
         public async Task<CategoryDto?> GetCategory(int id)
         {
             if(id <= 0 )
@@ -67,49 +55,128 @@ namespace MoneyTracker_API.Services
             return categoryDto;
         }
 
+        /// <summary>
+        /// To Return All Parent Categories Type
+        /// </summary>
+        /// <returns>Returns All Parent Categories</returns>
         public async Task<List<CategoryDto>> GetParentCategories()
         {
-            var List = await _repo.GetParentCategories();
-            List<CategoryDto> parentCategories = _mapper.Map<List<CategoryDto>>(List);
+            var categories = await _repo.GetParentCategories();
+            if (categories == null || !categories.Any())
+            {
+                return new List<CategoryDto>();
+            }
+            var parentCategories = _mapper.Map<List<CategoryDto>>(categories);
             return parentCategories;
         }
 
-        public async Task<List<CategoryDto>> GetParentCategoriesByType(SD.CategoryType type)
+        public async Task<List<CategoryDto>> GetParentCategoriesByType(SD.CategoryType? type)
         {
-            /*var parentCategories = await GetParentCategories();
-            var parentCategoriesFilteredByType =
-                parentCategories.Where(c => c.Type == type).ToList();*/
-            var parentCategoriesFilteredByType = await _repo.GetParentCategoriesByType(type);
-            var parentCategoriesFilteredByTypeDto = 
-                 _mapper.Map<List<CategoryDto>>(parentCategoriesFilteredByType);
-            return parentCategoriesFilteredByTypeDto;
+            if(type == null)
+            {
+                return await GetParentCategories();
+            }
+            var parentCategories =
+                await _repo.GetParentCategoriesByType(type);
+            if (parentCategories == null || !parentCategories.Any())
+            {
+                return new List<CategoryDto>();  // Empty List
+            }
+            var parentCategoriesDto = 
+                 _mapper.Map<List<CategoryDto>>(parentCategories);
+            return parentCategoriesDto;
         }
 
         public async Task<List<CategoryDto>> GetSubCategoriesByParentId(int parentCategoryId)
         {
             List<Category> subCategories =
                 await _repo.GetAll(c => c.ParentCategoryId == parentCategoryId);
-            List<CategoryDto> sunCategoriesDto = _mapper.Map<List<CategoryDto>>(subCategories);
-            return sunCategoriesDto;
-        }
-
-/*        public Task<CategoryDto> UpdateCategory(CategoryUpdateDto categoryUpdateDto)
-        {
-            throw new NotImplementedException();
-        }*/
-
-        public async Task<CategoryDto?> UpdateCategory(int id, CategoryUpdateDto categoryUpdateDto)
-        {
-            Category? category = await _repo.Get(c => c.Id == id);
-            if(category != null)
+            if(subCategories == null || !subCategories.Any())
             {
-                _mapper.Map(categoryUpdateDto, category);
-              //  Category CategoryToUpdate = _mapper.Map<Category>(categoryUpdateDto);
-                Category? categoryUpdated = await _repo.Update(category);
-                CategoryDto categoryDto = _mapper.Map<CategoryDto>(categoryUpdated);
-                return categoryDto;
+                return new List<CategoryDto>();
             }
-            return null;
+            List<CategoryDto> subCategoriesDto =
+                _mapper.Map<List<CategoryDto>>(subCategories);
+            return subCategoriesDto;
+        }
+        /// <summary>
+        /// Create a Perant and Sub category Type
+        /// </summary>
+        /// <param name="categoryCreateDto">give categoryCreateDto class</param>
+        /// <returns>returns CategoryDto Class</returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="InvalidOperationException"></exception>
+        public async Task<CategoryDto> CreateCategory(CategoryCreateDto categoryCreateDto)
+        {
+            if (categoryCreateDto == null)
+            {
+                throw new ArgumentNullException(nameof(categoryCreateDto));
+            }
+            // check for null Category Name
+            if (string.IsNullOrWhiteSpace(categoryCreateDto.Name))
+            {
+                throw new ArgumentException("Category name cannot be empty", nameof(categoryCreateDto.Name));
+            }
+            // Check for duplicate category name
+            bool categoryExists = await _repo.CategoryExists(categoryCreateDto.Name, categoryCreateDto.Type);
+            if (categoryExists)
+            {
+                throw new InvalidOperationException($"A category with name '{categoryCreateDto.Name}' already exists for type '{categoryCreateDto.Type}'");
+            }
+            if(categoryCreateDto.ParentCategoryId <= 0)
+            {
+                throw new ArgumentException("Parent category Id Cannot be Equal or less than Zero");
+            }
+            // Validate parent category exists if provided
+            if (categoryCreateDto.ParentCategoryId.HasValue)
+            {
+                var parentCategory =
+                    await _repo.Get(
+                        c => c.ParentCategoryId == categoryCreateDto.ParentCategoryId 
+                        && c.ParentCategoryId == null);  //check for exists the Category in db and didn't subcategory
+                if (parentCategory == null)
+                {
+                    throw new ArgumentException("Parent category not found", nameof(categoryCreateDto.ParentCategoryId));
+                }
+            }
+            var category = _mapper.Map<Category>(categoryCreateDto);
+            Category categoryFromCreate = await _repo.Create(category);
+            CategoryDto dto = _mapper.Map<CategoryDto>(categoryFromCreate);
+            return dto;
+        }
+        public async Task<CategoryDto> UpdateCategory(int id, CategoryUpdateDto categoryUpdateDto)
+        {
+            if (categoryUpdateDto == null)
+            {
+                throw new ArgumentNullException(nameof(categoryUpdateDto));
+            }
+            if (string.IsNullOrWhiteSpace(categoryUpdateDto.Name))
+            {
+                throw new ArgumentException("Category name cannot be empty", nameof(categoryUpdateDto.Name));
+            }
+            
+            if (categoryUpdateDto.ParentCategoryId <= 0)
+            {
+                throw new ArgumentException("Parent category Id Cannot be Equal or less than Zero");
+            }
+            // Validate parent category exists if provided
+            if (categoryUpdateDto.ParentCategoryId.HasValue)
+            {
+                var parentCategory =
+                    await _repo.Get(
+                        c => c.Id == categoryUpdateDto.ParentCategoryId
+                        && c.ParentCategoryId == null);  //check for exists the Category in db and didn't subcategory
+                if (parentCategory == null)
+                {
+                    throw new ArgumentException("Parent category not found", nameof(categoryUpdateDto.ParentCategoryId));
+                }
+            }
+            Category category = await _repo.Get(c => c.Id == id);
+            _mapper.Map(categoryUpdateDto, category);
+            Category? categoryUpdated = await _repo.Update(category);
+            CategoryDto categoryDto = _mapper.Map<CategoryDto>(categoryUpdated);
+            return categoryDto;
         }
 
         public async Task<bool> DeleteCategory(int id)

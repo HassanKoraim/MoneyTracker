@@ -7,7 +7,7 @@ namespace MoneyTracker_API.ServiceContracts
     {
         // Read operations
         Task<CategoryDto?> GetCategory(int id);
-        Task<List<CategoryDto>?> GetAllCategories();
+        Task<List<CategoryDto>> GetAllCategories();
         Task<List<CategoryDto>> GetParentCategories();
         Task<List<CategoryDto>> GetSubCategoriesByParentId(int parentCategoryId); 
 
@@ -18,7 +18,7 @@ namespace MoneyTracker_API.ServiceContracts
         Task<CategoryDto?> UpdateCategory(int id, CategoryUpdateDto categoryUpdateDto);
         // Delete operations
         Task<bool> DeleteCategory(int id); // Return bool to indicate success
-        Task<List<CategoryDto>> GetParentCategoriesByType(CategoryType type);
+        Task<List<CategoryDto>> GetParentCategoriesByType(CategoryType? type);
 
     }
 }

@@ -31,7 +31,7 @@ namespace MoneyTracker_API.Repositroies
             return rowsDeleted > 0;
         }
 
-        public async Task<T?> Get(Expression<Func<T, bool>> filter = null, string? includeProperties = null)
+        public async Task<T> Get(Expression<Func<T, bool>> filter = null, string? includeProperties = null)
         {
             IQueryable<T> query = _dbset;
             if (filter != null)
@@ -66,11 +66,6 @@ namespace MoneyTracker_API.Repositroies
             return await query.ToListAsync();
         }
 
-        public async Task<T?> Update(T entity)
-        {
-            _dbset.Update(entity);
-            await _context.SaveChangesAsync();
-            return entity;
-        }
+       
     }
 }

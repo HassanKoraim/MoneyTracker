@@ -48,5 +48,16 @@ namespace MoneyTracker_API.Repositroies
                .Where(c => c.ParentCategoryId == parentCategoryId).ToListAsync();
             return categories;
         }
+        public async Task<Category> Update(Category category)
+        {
+            var categoryFromDb =  await Get(c => c.Id == category.Id);
+            categoryFromDb.Name = category.Name;
+            categoryFromDb.Type = category.Type;
+            categoryFromDb.Description = category.Description;
+            categoryFromDb.ParentCategoryId = category.ParentCategoryId;
+            categoryFromDb.SubCategories = category.SubCategories;
+            await _context.SaveChangesAsync();
+            return category;
+        }
     }
 }
