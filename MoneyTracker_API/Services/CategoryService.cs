@@ -133,11 +133,15 @@ namespace MoneyTracker_API.Services
             {
                 var parentCategory =
                     await _repo.Get(
-                        c => c.ParentCategoryId == categoryCreateDto.ParentCategoryId 
+                        c => c.Id == categoryCreateDto.ParentCategoryId 
                         && c.ParentCategoryId == null);  //check for exists the Category in db and didn't subcategory
                 if (parentCategory == null)
                 {
                     throw new ArgumentException("Parent category not found", nameof(categoryCreateDto.ParentCategoryId));
+                }
+                if(categoryCreateDto.SubCategories.Any())
+                {
+                    throw new ArgumentException("Sub category Cann't be a Parent For categories ");
                 }
             }
             var category = _mapper.Map<Category>(categoryCreateDto);
