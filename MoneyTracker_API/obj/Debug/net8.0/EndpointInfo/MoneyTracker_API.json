@@ -217,41 +217,11 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "CategoryDto": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "type": {
-            "$ref": "#/components/schemas/CategoryType"
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "parentCategoryId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "parentCategoryName": {
-            "type": "string",
-            "nullable": true
           },
           "subCategories": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/CategoryDto"
+              "$ref": "#/components/schemas/CategoryCreateDto"
             },
             "nullable": true
           }
@@ -285,14 +255,10 @@
             "format": "int32",
             "nullable": true
           },
-          "parentCategoryName": {
-            "type": "string",
-            "nullable": true
-          },
           "subCategories": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/CategoryDto"
+              "$ref": "#/components/schemas/CategoryUpdateDto"
             },
             "nullable": true
           }

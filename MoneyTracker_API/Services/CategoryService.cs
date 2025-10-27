@@ -141,7 +141,7 @@ namespace MoneyTracker_API.Services
                 }
                 if(categoryCreateDto.SubCategories.Any())
                 {
-                    throw new ArgumentException("Sub category Cann't be a Parent For categories ");
+                    throw new ArgumentException("Sub category Cann't be a Parent For A sub category");
                 }
             }
             var category = _mapper.Map<Category>(categoryCreateDto);
