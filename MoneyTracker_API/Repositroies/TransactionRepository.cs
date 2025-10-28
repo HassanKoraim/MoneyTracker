@@ -27,8 +27,7 @@ namespace MoneyTracker_API.Repositroies
             transactionFromDb.RecurrenceType = transaction.RecurrenceType;
             transactionFromDb.RecurrenceEndDate = transaction.RecurrenceEndDate;
             transactionFromDb.ImageUrl = transaction.ImageUrl;
-            transactionFromDb.CreatedAt = transaction.CreatedAt;
-            transactionFromDb.UpdatedAt = transaction.UpdatedAt;
+            transactionFromDb.UpdatedAt = DateTime.Now;
             await _context.SaveChangesAsync();
             return transactionFromDb;
         }
