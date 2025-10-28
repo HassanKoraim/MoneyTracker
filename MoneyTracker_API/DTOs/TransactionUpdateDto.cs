@@ -9,11 +9,8 @@ namespace MoneyTracker_API.DTOs
         public TransactionType TransactionType { get; set; }
         public DateTime TransactionDate { get; set; }
         public int CategoryId { get; set; }
-        public string CategoryName { get; set; } = string.Empty;
         public int? ParentCategoryId { get; set; }
-        public string? ParentCategoryName { get; set; }
         public int PaymentMethodId { get; set; }
-        public string PaymentMethodName { get; set; } = string.Empty;
         public bool IsRecurring { get; set; }
         public RecurrenceType? RecurrenceType { get; set; }
         public DateTime? RecurrenceEndDate { get; set; }
