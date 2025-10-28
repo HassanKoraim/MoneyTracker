@@ -10,8 +10,9 @@ namespace MoneyTracker_API.Data
         {
         }
 
-        public DbSet<Income> Incomes { get; set; }
-        public DbSet<Expense> Expenses { get; set; }
+       /* public DbSet<Income> Incomes { get; set; }
+        public DbSet<Expense> Expenses { get; set; }*/
+       public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<PaymentMethod> PaymentMethods { get; set; }
 
@@ -24,20 +25,7 @@ namespace MoneyTracker_API.Data
                 .HasMany(c => c.SubCategories)
                 .WithOne(c => c.ParentCategory)
                 .HasForeignKey(c => c.ParentCategoryId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            // Configure other relationships...
-            modelBuilder.Entity<Income>()
-                .HasOne(i => i.Category)
-                .WithMany(c => c.Incomes)
-                .HasForeignKey(i => i.CategoryId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<Expense>()
-                .HasOne(e => e.Category)
-                .WithMany(c => c.Expenses)
-                .HasForeignKey(e => e.CategoryId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Restrict);            
 
             // Seed data with categories and subcategories
             modelBuilder.Entity<Category>().HasData(
