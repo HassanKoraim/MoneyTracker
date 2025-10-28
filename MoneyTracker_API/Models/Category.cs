@@ -27,7 +27,6 @@ namespace MoneyTracker_API.Models
         // Navigation properties
         public virtual ICollection<Category> SubCategories { get; set; } = new List<Category>();
         // Navigation properties
-        public virtual ICollection<Income> Incomes { get; set; } = new List<Income>();
-        public virtual ICollection<Expense> Expenses { get; set; } = new List<Expense>();
+        public virtual ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
     }
 }
