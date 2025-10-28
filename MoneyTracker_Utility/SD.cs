@@ -15,6 +15,11 @@
             Income ,
             Expense
         }
+        public enum TransactionType
+        {
+            Income,
+            Expense,
+        }
     }
     
 }
