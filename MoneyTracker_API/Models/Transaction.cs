@@ -5,7 +5,7 @@ using static MoneyTracker_Utility.SD;
 
 namespace MoneyTracker_API.Models
 {
-    public abstract class Transaction
+    public class Transaction
     {
         [Key]
         public int Id { get; set; }
@@ -15,6 +15,8 @@ namespace MoneyTracker_API.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; }
 
+        [Required]
+        public TransactionType transactionType {  get; set; }
         [Required]
         [StringLength(100)]
         public string Description { get; set; } = string.Empty;
