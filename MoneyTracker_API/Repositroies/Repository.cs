@@ -37,7 +37,7 @@ namespace MoneyTracker_API.Repositroies
             return rowsDeleted > 0;
         }
 
-        public async Task<T> Get(Expression<Func<T, bool>> filter = null, string? includeProperties = null)
+        public async Task<T?> Get(Expression<Func<T, bool>> filter = null, string? includeProperties = null)
         {
             IQueryable<T> query = _dbset;
             if (filter != null)
