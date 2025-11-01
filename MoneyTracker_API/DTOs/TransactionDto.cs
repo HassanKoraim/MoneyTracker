@@ -10,7 +10,6 @@ namespace MoneyTracker_API.DTOs
         public DateTime TransactionDate { get; set; }
         public int CategoryId { get; set; }
         public string CategoryName { get; set; } = string.Empty;
-        public int? ParentCategoryId { get; set; }
         public string? ParentCategoryName { get; set; } 
         public int PaymentMethodId { get; set; }
         public string PaymentMethodName { get; set; } = string.Empty;
