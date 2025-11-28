@@ -30,7 +30,6 @@ namespace MoneyTracker_API.Services
             var transactionDto = _mapper.Map<TransactionDto>(transaction);
             return transactionDto;
         }
-
         public async Task<List<TransactionDto>> GetAll(Expression<Func<Transaction, bool>> predicate = null)
         {
             var transactionList = await _repo.GetAll(predicate);
@@ -50,6 +49,14 @@ namespace MoneyTracker_API.Services
             if(transactionCreateDto.Amount <= 0)
             {
                 throw new ArgumentException("Amount must be greater than zero");
+            }
+            if(transactionCreateDto.CategoryId <= 0)
+            {
+                throw new ArgumentException("CategoryId must be greater than zero");
+            }
+            if (transactionCreateDto.PaymentMethodId <= 0)
+            {
+                throw new ArgumentException("PaymentMethodId must be greater than zero");
             }
             Transaction transaction = _mapper.Map<Transaction>(transactionCreateDto);
             var transactionCreated = await _repo.Create(transaction);
@@ -80,17 +87,6 @@ namespace MoneyTracker_API.Services
             {
                 throw new ArgumentNullException(nameof(transaction));
             }
-            /*transaction.Amount = transactionUpdateDto.Amount;
-            transaction.Description = transactionUpdateDto.Description;
-            transaction.transactionType = transactionUpdateDto.TransactionType;
-            transaction.TransactionDate = transactionUpdateDto.TransactionDate;
-            transaction.CategoryId = transactionUpdateDto.CategoryId;
-            transaction.PaymentMethodId = transactionUpdateDto.PaymentMethodId;
-            transaction.IsRecurring = transactionUpdateDto.IsRecurring;
-            transaction.RecurrenceType = transactionUpdateDto.RecurrenceType;
-            transaction.RecurrenceEndDate = transactionUpdateDto.RecurrenceEndDate;
-            transaction.ImageUrl = transactionUpdateDto.ImageUrl;
-            transaction.UpdatedAt = DateTime.Now;*/
             Transaction transactionFromDto = _mapper.Map<Transaction>(transactionUpdateDto);
             Transaction transactionUpdated = await _repo.Update(id,transactionFromDto);
             TransactionDto transactionDto = _mapper.Map<TransactionDto>(transactionUpdated);

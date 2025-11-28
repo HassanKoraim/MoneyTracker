@@ -79,8 +79,7 @@
               "ViewState": "AgIAAAoAAAAAAAAAAAAywBUAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-23T16:12:30.318Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -93,8 +92,7 @@
               "ViewState": "AgIAADYAAAAAAAAAAABDwD8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-01T13:06:33.436Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -104,9 +102,23 @@
               "RelativeDocumentMoniker": "MoneyTracker_API\\Services\\TransactionService.cs",
               "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\MoneyTracker\\MoneyTracker_API\\Services\\TransactionService.cs",
               "RelativeToolTip": "MoneyTracker_API\\Services\\TransactionService.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAA3wDEAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAA1wGQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-01T12:21:19.283Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\MoneyTracker\\MoneyTracker_API\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "MoneyTracker_API\\Models\\Transaction.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\MoneyTracker\\MoneyTracker_API\\Models\\Transaction.cs",
+              "RelativeToolTip": "MoneyTracker_API\\Models\\Transaction.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAABCwBsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T13:28:31.308Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -120,8 +132,7 @@
               "RelativeToolTip": "MoneyTracker_API\\ServiceContracts\\ITransactionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T17:59:03.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T17:59:03.868Z"
             },
             {
               "$type": "Document",
@@ -145,21 +156,7 @@
               "RelativeToolTip": "MoneyTracker_API\\RepositoryContracts\\IRepositoryContracts.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAABDwA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T13:40:59.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\MoneyTracker\\MoneyTracker_API\\Models\\Transaction.cs",
-              "RelativeDocumentMoniker": "MoneyTracker_API\\Models\\Transaction.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\MoneyTracker\\MoneyTracker_API\\Models\\Transaction.cs",
-              "RelativeToolTip": "MoneyTracker_API\\Models\\Transaction.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T13:28:31.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T13:40:59.415Z"
             },
             {
               "$type": "Document",
@@ -183,8 +180,7 @@
               "RelativeToolTip": "MoneyTracker_API\\Repositroies\\TransactionRepository.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAA6wCEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T18:24:08.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T18:24:08.274Z"
             },
             {
               "$type": "Document",
