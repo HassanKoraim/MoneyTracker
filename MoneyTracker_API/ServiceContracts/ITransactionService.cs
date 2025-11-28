@@ -19,7 +19,7 @@ namespace MoneyTracker_API.ServiceContracts
         //GetIncomeInSpecificCategory
 
         //GetAllIncome
-
+        public Task<decimal> GetAmount(Expression<Func<Transaction, bool>> filter = null, string transactionType = null); 
         //GetExpenseInSpecificCategory
 
         //GetAllExpense

@@ -30,17 +30,17 @@ namespace MoneyTracker_API.Repositroies
             return categories;
         }
 
-        public async Task<List<Category>> GetParentCategoriesByType(SD.CategoryType type)
+        public async Task<List<Category>> GetParentCategoriesByType(SD.CategoryType? type)
         {
             List<Category> categories = await _context.Categories
                .Where(c => c.Type == type && c.ParentCategoryId == null).ToListAsync();
             return categories;
         }
 
-        public Task<List<Category>> GetParentCategoriesByType(SD.CategoryType? type)
+        /*public Task<List<Category>> GetParentCategoriesByType(SD.CategoryType? type)
         {
             throw new NotImplementedException();
-        }
+        }*/
 
         public async Task<List<Category>> GetSubCategoriesByParentId(int parentCategoryId)
         {

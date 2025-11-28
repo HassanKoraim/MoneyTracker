@@ -13,6 +13,10 @@ namespace MoneyTracker_API
             CreateMap<CategoryDto, CategoryCreateDto>().ReverseMap();
             CreateMap<CategoryUpdateDto, Category>().ReverseMap();
             CreateMap<TransactionDto, Transaction>().ReverseMap();
+            CreateMap<TransactionCreateDto, Transaction>().ReverseMap();
+            //.ForMember(dest => dest.PaymentMethodId, opt => opt.MapFrom(src => src.PaymentMethodId));
+            CreateMap<TransactionUpdateDto, Transaction>().ReverseMap();
+
         }
     }
 }

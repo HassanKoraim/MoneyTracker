@@ -2,6 +2,7 @@
 using MoneyTracker_API.Data;
 using MoneyTracker_API.Models;
 using MoneyTracker_API.RepositoryContracts;
+using MoneyTracker_Utility;
 using System.Linq.Expressions;
 
 namespace MoneyTracker_API.Repositroies
@@ -13,10 +14,10 @@ namespace MoneyTracker_API.Repositroies
         {
             _context = context;
         }
-        public async Task<Transaction> Update(Transaction transaction)
+        public async Task<Transaction> Update(int id ,Transaction transaction)
         {
             var transactionFromDb =
-               await _context.Transactions.Where(t => t.Id == transaction.Id).FirstOrDefaultAsync();
+               await _context.Transactions.Where(t => t.Id == id).FirstOrDefaultAsync();
             transactionFromDb.Amount = transaction.Amount;
             transactionFromDb.transactionType = transaction.transactionType;
             transactionFromDb.Description = transaction.Description;
@@ -31,5 +32,21 @@ namespace MoneyTracker_API.Repositroies
             await _context.SaveChangesAsync();
             return transactionFromDb;
         }
+        public async Task<decimal> GetAmount(Expression<Func<Transaction, bool>> filter = null, string transactionType = null)
+        {
+            IQueryable<Transaction> query = _context.Transactions;
+            if(transactionType != null)
+            {
+                query = query.Where(t => t.transactionType.ToString() == transactionType);
+            }
+            if(filter != null)
+            {
+                query = query.Where(filter);
+            }
+            decimal totalIncome = await query.SumAsync(t => t.Amount);
+            return totalIncome;
+        }
+
+
     }
 }

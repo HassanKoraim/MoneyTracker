@@ -166,112 +166,6 @@ namespace MoneyTracker_API.Migrations
                         });
                 });
 
-            modelBuilder.Entity("MoneyTracker_API.Models.Expense", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("ImageUrl")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<bool>("IsRecurring")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("PaymentMethodId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("RecurrenceEndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("RecurrenceType")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("TransactionDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.HasIndex("PaymentMethodId");
-
-                    b.ToTable("Expenses");
-                });
-
-            modelBuilder.Entity("MoneyTracker_API.Models.Income", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("ImageUrl")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<bool>("IsRecurring")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("PaymentMethodId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("RecurrenceEndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("RecurrenceType")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("TransactionDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.HasIndex("PaymentMethodId");
-
-                    b.ToTable("Incomes");
-                });
-
             modelBuilder.Entity("MoneyTracker_API.Models.PaymentMethod", b =>
                 {
                     b.Property<int>("Id")
@@ -320,6 +214,62 @@ namespace MoneyTracker_API.Migrations
                         });
                 });
 
+            modelBuilder.Entity("MoneyTracker_API.Models.Transaction", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<bool>("IsRecurring")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("PaymentMethodId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("RecurrenceEndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("RecurrenceType")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("transactionType")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("PaymentMethodId");
+
+                    b.ToTable("Transactions");
+                });
+
             modelBuilder.Entity("MoneyTracker_API.Models.Category", b =>
                 {
                     b.HasOne("MoneyTracker_API.Models.Category", "ParentCategory")
@@ -330,35 +280,16 @@ namespace MoneyTracker_API.Migrations
                     b.Navigation("ParentCategory");
                 });
 
-            modelBuilder.Entity("MoneyTracker_API.Models.Expense", b =>
+            modelBuilder.Entity("MoneyTracker_API.Models.Transaction", b =>
                 {
                     b.HasOne("MoneyTracker_API.Models.Category", "Category")
-                        .WithMany("Expenses")
+                        .WithMany("Transactions")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("MoneyTracker_API.Models.PaymentMethod", "PaymentMethod")
-                        .WithMany("Expenses")
-                        .HasForeignKey("PaymentMethodId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Category");
-
-                    b.Navigation("PaymentMethod");
-                });
-
-            modelBuilder.Entity("MoneyTracker_API.Models.Income", b =>
-                {
-                    b.HasOne("MoneyTracker_API.Models.Category", "Category")
-                        .WithMany("Incomes")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("MoneyTracker_API.Models.PaymentMethod", "PaymentMethod")
-                        .WithMany("Incomes")
+                        .WithMany("Transactions")
                         .HasForeignKey("PaymentMethodId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -370,18 +301,14 @@ namespace MoneyTracker_API.Migrations
 
             modelBuilder.Entity("MoneyTracker_API.Models.Category", b =>
                 {
-                    b.Navigation("Expenses");
-
-                    b.Navigation("Incomes");
-
                     b.Navigation("SubCategories");
+
+                    b.Navigation("Transactions");
                 });
 
             modelBuilder.Entity("MoneyTracker_API.Models.PaymentMethod", b =>
                 {
-                    b.Navigation("Expenses");
-
-                    b.Navigation("Incomes");
+                    b.Navigation("Transactions");
                 });
 #pragma warning restore 612, 618
         }

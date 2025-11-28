@@ -2,7 +2,7 @@
 
 namespace MoneyTracker_API.DTOs
 {
-    public abstract class TransactionDto
+    public class TransactionDto
     {
         public int Id { get; set; }
         public decimal Amount { get; set; }

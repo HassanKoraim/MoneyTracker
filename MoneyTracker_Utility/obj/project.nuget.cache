@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "P6jD7Rr/KG8=",
+  "dgSpecHash": "RC8WLspPMec=",
   "success": true,
   "projectFilePath": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\MoneyTracker\\MoneyTracker_Utility\\MoneyTracker_Utility.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\start\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\start\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\start\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+  ],
   "logs": []
 }

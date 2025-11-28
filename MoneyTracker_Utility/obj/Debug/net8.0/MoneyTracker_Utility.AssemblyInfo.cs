@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoneyTracker_Utility")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+909d67ad36ae83f1071a4290b700f6ff9211d122")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a47357892556d83ee4d8c06576bc49f804d8ae1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoneyTracker_Utility")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoneyTracker_Utility")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
