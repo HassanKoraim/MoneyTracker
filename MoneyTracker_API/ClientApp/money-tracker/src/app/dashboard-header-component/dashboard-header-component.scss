@@ -1,0 +1,27 @@
+.dashboard-container {
+  display: flex; /* Put components side-by-side */
+  gap: 20px; 
+  height: 400px; 
+  width: 100%;
+  background-color: #f0f2f5; /* Light background to see the layout */
+  padding: 10px;
+}
+
+.chart-box {
+  flex: 1; /* Each takes 50% width */
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+  /* --- THE CENTERING MAGIC --- */
+  display: flex;
+  justify-content: center; /* Centers horizontally (Left-to-Right) */
+  align-items: center;     /* Centers vertically (Top-to-Bottom) */
+}
+app-income-outcome, 
+app-bar-chart-component {
+  display: block; 
+  width: 100%; /* Occupy the full width of the .chart-box */
+  text-align: center; /* Centers text/inline elements inside the component */
+}

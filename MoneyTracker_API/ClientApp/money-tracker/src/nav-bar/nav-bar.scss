@@ -1,0 +1,12 @@
+.fw-bold {
+  min-width: 80px; /* Prevents the navbar from "jumping" when the text changes length */
+  display: inline-block;
+}
+
+.bi {
+  cursor: pointer;
+  color: #6c757d;
+  &:hover {
+    color: #0d6efd;
+  }
+}
