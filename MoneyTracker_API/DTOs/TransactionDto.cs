@@ -14,7 +14,7 @@ namespace MoneyTracker_API.DTOs
         public int PaymentMethodId { get; set; }
         public string PaymentMethodName { get; set; } = string.Empty;
         public bool IsRecurring { get; set; }
-        public RecurrenceType? RecurrenceType { get; set; }
+        public string? RecurrenceType { get; set; }
         public DateTime? RecurrenceEndDate { get; set; }
         public string? ImageUrl { get; set; }
     }

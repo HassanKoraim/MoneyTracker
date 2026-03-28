@@ -8,7 +8,8 @@ namespace MoneyTracker_API.ServiceContracts
     {
         // GetTransactionById
         public Task<TransactionDto> GetById(int id);
-        public Task<List<TransactionDto>> GetAll(Expression<Func<Transaction,bool>> predicate = null);
+        public Task<List<TransactionDto>> GetAll(Expression<Func<Transaction,bool>> predicate = null, string? sortBy = null, string? sortOrder = null);
+        //public Task<List<TransactionDto>> GetTransactions(Expression<Func<Transaction,bool>> predicate = null);
         //Create
         public Task<TransactionDto> Create(TransactionCreateDto transactionCreateDto);
         //Update
@@ -19,11 +20,16 @@ namespace MoneyTracker_API.ServiceContracts
         //GetIncomeInSpecificCategory
 
         //GetAllIncome
-        public Task<decimal> GetAmount(Expression<Func<Transaction, bool>> filter = null, string transactionType = null); 
+        public Task<decimal> GetAmount(Expression<Func<Transaction, bool>> filter = null, string transactionType = null);
         //GetExpenseInSpecificCategory
 
         //GetAllExpense
 
+
+        //GetTransactionsExcel
+        public Task<MemoryStream> GetTransactionsExcel(List<TransactionDto> transactionDtos);
+
+       public List<TransactionDto> Sort(string sortBy, string sortOrder, List<TransactionDto> transactions);
 
     }
 }

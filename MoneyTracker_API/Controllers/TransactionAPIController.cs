@@ -1,14 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MoneyTracker_API.DTOs;
 using MoneyTracker_API.Models;
 using MoneyTracker_API.ServiceContracts;
+using System.Globalization;
 using System.Linq.Expressions;
+using System.Text.Json;
 
 namespace MoneyTracker_API.Controllers
 {
     [Route("api/TransactionApi")]
     [ApiController]
-    public class TransactionAPIController :Controller
+    public class TransactionAPIController : Controller
     {
         private readonly ITransactionService _transactionService;
         public TransactionAPIController(ITransactionService transactionService)
@@ -23,13 +26,25 @@ namespace MoneyTracker_API.Controllers
             return Ok(transactionDto);
         }
         // Get All
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllTransactions()
+        [HttpGet("GetAll/{sortBy?}/{sortOrder?}")]
+      //  [Authorize(Roles = "Admin")]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> GetAllTransactions(string? sortBy = null,string? sortOrder= null)
         {
-            var transactionDtos = await _transactionService.GetAll();
+            var transactionDtos = await _transactionService.GetAll(null, sortBy, sortOrder);
             return Ok(transactionDtos);
         }
         [HttpGet("GetAmount")]
+ //       [Authorize(Roles = "Admin")]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> GetAmount(int? id, string transactionType = null)
         {
             Expression<Func<Transaction,bool>> filter = null;
@@ -40,7 +55,14 @@ namespace MoneyTracker_API.Controllers
             var totalIncome = await _transactionService.GetAmount(filter,transactionType);
             return Ok(totalIncome);
         }
+
         [HttpPost]
+        [Authorize(Roles = "Admin")]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> CreateTransaction(TransactionCreateDto transactionCreateDto)
         {
             if (!ModelState.IsValid)
@@ -51,6 +73,12 @@ namespace MoneyTracker_API.Controllers
             return Ok(transactionDto);
         }
         [HttpPut]
+        [Authorize(Roles = "Admin")]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> UpdateTransaction(int id, TransactionUpdateDto transactionUpdateDto)
         {
             if (!ModelState.IsValid)
@@ -61,10 +89,31 @@ namespace MoneyTracker_API.Controllers
             return Ok(transactionDto);
         }
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<bool> Delete(int id)
         {
             bool IsDelete = await _transactionService.Delete(id);
             return IsDelete;
         }
+
+        [HttpGet("transactionsExcel/{sortBy?}/{sortOrder?}")]
+        public async Task<IActionResult> TranstactionsExcel(string sortBy=null,string sortOrder = null)
+            {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+            var transactionList = await _transactionService.GetAll(null, sortBy,sortOrder);
+                //JsonSerializer.Deserialize<List<TransactionDto>>(transactions, options);
+
+            MemoryStream memoryStream = await _transactionService.GetTransactionsExcel(transactionList);
+            return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "transactions.xlsx");
+        }
+
     }
 }

@@ -12,10 +12,10 @@ namespace MoneyTracker_API.Data
 
        /* public DbSet<Income> Incomes { get; set; }
         public DbSet<Expense> Expenses { get; set; }*/
-       public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<PaymentMethod> PaymentMethods { get; set; }
-
+        public DbSet<LocalUser> LocalUsers { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
