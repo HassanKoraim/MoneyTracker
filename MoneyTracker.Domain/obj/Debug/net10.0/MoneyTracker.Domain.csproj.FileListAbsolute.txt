@@ -1,0 +1,12 @@
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\bin\Debug\net10.0\MoneyTracker.Domain.deps.json
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\bin\Debug\net10.0\MoneyTracker.Domain.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\bin\Debug\net10.0\MoneyTracker.Domain.pdb
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\obj\Debug\net10.0\MoneyTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\obj\Debug\net10.0\MoneyTracker.Domain.AssemblyInfoInputs.cache
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\obj\Debug\net10.0\MoneyTracker.Domain.AssemblyInfo.cs
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\obj\Debug\net10.0\MoneyTracker.Domain.csproj.CoreCompileInputs.cache
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\obj\Debug\net10.0\MoneyTracker.Domain.sourcelink.json
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\obj\Debug\net10.0\MoneyTracker.Domain.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\obj\Debug\net10.0\refint\MoneyTracker.Domain.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\obj\Debug\net10.0\MoneyTracker.Domain.pdb
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Domain\obj\Debug\net10.0\ref\MoneyTracker.Domain.dll

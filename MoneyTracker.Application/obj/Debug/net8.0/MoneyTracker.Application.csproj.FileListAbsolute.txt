@@ -1,0 +1,16 @@
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\bin\Debug\net8.0\MoneyTracker.Application.deps.json
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\bin\Debug\net8.0\MoneyTracker.Application.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\bin\Debug\net8.0\MoneyTracker.Application.pdb
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\bin\Debug\net8.0\MoneyTracker.Domain.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\bin\Debug\net8.0\MoneyTracker.Domain.pdb
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\MoneyTracker.Application.csproj.AssemblyReference.cache
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\MoneyTracker.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\MoneyTracker.Application.AssemblyInfoInputs.cache
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\MoneyTracker.Application.AssemblyInfo.cs
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\MoneyTracker.Application.csproj.CoreCompileInputs.cache
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\MoneyTracker.Application.sourcelink.json
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\MoneyTra.92AA2ACB.Up2Date
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\MoneyTracker.Application.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\refint\MoneyTracker.Application.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\MoneyTracker.Application.pdb
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Application\obj\Debug\net8.0\ref\MoneyTracker.Application.dll
