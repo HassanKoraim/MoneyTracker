@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using MoneyTracker.Application.DTOs;
 using MoneyTracker.Application.Queries.Category;
+using MoneyTracker.Application.Commands.Category;
 using MoneyTracker.Application.ServiceContracts;
 using MoneyTracker.Domain.Enums;
 
@@ -27,26 +28,26 @@ namespace MoneyTracker.API.Controllers
         public async Task<IActionResult> GetCategories()
         {
             //var categories = await _categoryService.GetAllCategories();
-            var categories = await _mediator.Send(new GetAllCategoryQuery());
+            var categories = await _mediator.Send(new GetAllCategoriesQuery());
             
             return Ok(categories);
         }
         [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetCategory(int id)
+        public async Task<IActionResult> GetCategoryById(int id)
         {
-            CategoryDto? categoryDto = await _categoryService.GetCategory(id);
+            CategoryDto? categoryDto = await _mediator.Send(new GetCategoryByIdQuery(id));
             return Ok(categoryDto);
         }
         [HttpGet("parent/{parentId:int}")]
         public async Task<IActionResult> GetSubCategoriesForParent(int parentId)
         {
-            var subCategories = await _categoryService.GetSubCategoriesByParentId(parentId);
+            var subCategories = await _mediator.Send(new GetSubCategoriesByParentIdQuery(parentId));
             return Ok(subCategories);
         }
         [HttpGet("parents")]
         public async Task<IActionResult> GetParentCategories()
         {
-            var parentCategories = await _categoryService.GetParentCategories();
+            var parentCategories = await _mediator.Send(new GetParentCategoriesQuery());
             return Ok(parentCategories);
         }
         [HttpGet("Income")]
@@ -73,7 +74,7 @@ namespace MoneyTracker.API.Controllers
                     return BadRequest(ModelState);
                 }
 
-                var category = await _categoryService.CreateCategory(dto);
+                var category = await _mediator.Send(new CreateCategoryCommand(dto));
                 //   return CreatedAtAction(nameof(GetCategory), new { id = category.Id }, category);
                 return Ok(category);
             }
@@ -95,7 +96,7 @@ namespace MoneyTracker.API.Controllers
         [HttpPut("{id:int}")]
         public async Task<IActionResult> UpdateCategory(int id, CategoryUpdateDto dto)
         {
-            CategoryDto? categoryDto = await _categoryService.UpdateCategory(id, dto);
+            CategoryDto? categoryDto = await _mediator.Send(new UpdateCategoryCommand(id, dto));
             if (categoryDto == null) return BadRequest();
             return Ok(categoryDto); 
         }
@@ -103,7 +104,7 @@ namespace MoneyTracker.API.Controllers
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
-            bool IsSuccess = await _categoryService.DeleteCategory(id);
+            bool IsSuccess = await _mediator.Send(new DeleteCategoryCommand(id));
             if(IsSuccess) return Ok();
             else return BadRequest();
         }

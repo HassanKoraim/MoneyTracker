@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 
 namespace MoneyTracker.Application.Queries.Category
 {
-    public record GetAllCategoryQuery() : IRequest<List<CategoryDto>>;
+    public record GetCategoryByIdQuery(int id) : IRequest<CategoryDto?>;
 }

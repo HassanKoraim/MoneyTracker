@@ -11,6 +11,7 @@ using MoneyTracker.Application.ServiceContracts;
 using MoneyTracker.Infrastructure.Data;
 using MoneyTracker.Infrastructure.Repositroies;
 using MoneyTracker.Infrastructure.Services;
+using MoneyTracker.Application;
 using System.Text;
 
 
@@ -21,7 +22,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped(typeof(IRepositoryContracts<>), typeof(Repository<>));
 builder.Services.AddScoped<ICategoriesRepository, CategoriesRepository>();
 builder.Services.AddScoped<ITransactionService, TransactionService>();
@@ -89,8 +89,9 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 builder.Services.AddMediatR(cfg => {
-    cfg.RegisterServicesFromAssembly(typeof(GetAllCategoryQueryHandler).Assembly);
-    cfg.RegisterServicesFromAssembly(typeof(GetParentCategoriesByTypeQueryHandler).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(AssemblyReference).Assembly);
+    //cfg.RegisterServicesFromAssembly(typeof(GetParentCategoriesByTypeQueryHandler).Assembly);
+    //cfg.RegisterServicesFromAssembly(typeof(GetCategoryByIdQueryHandler).Assembly);
 }); 
 var app = builder.Build();
 

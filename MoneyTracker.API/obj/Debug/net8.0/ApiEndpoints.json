@@ -27,7 +27,7 @@
   },
   {
     "ContainingType": "MoneyTracker.API.Controllers.CategoryAPIController",
-    "Method": "GetCategory",
+    "Method": "GetCategoryById",
     "RelativePath": "api/CategoryApi/{id}",
     "HttpMethod": "GET",
     "IsController": true,

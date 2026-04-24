@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace MoneyTracker.Application.Handler.Category
 {
-    public class GetAllCategoryQueryHandler : IRequestHandler<GetAllCategoryQuery, List<CategoryDto>>
+    public class GetAllCategoryQueryHandler : IRequestHandler<GetAllCategoriesQuery, List<CategoryDto>>
     {
         private readonly ICategoriesRepository _categoriesRepository;
         private readonly IMapper _mapper;
@@ -20,7 +20,7 @@ namespace MoneyTracker.Application.Handler.Category
             _categoriesRepository = categoriesRepository;
             _mapper = mapper;
         }
-        public async Task<List<CategoryDto>> Handle(GetAllCategoryQuery request, CancellationToken cancellationToken)
+        public async Task<List<CategoryDto>> Handle(GetAllCategoriesQuery request, CancellationToken cancellationToken)
         {
             var categories = await _categoriesRepository.GetAll();
             if (categories == null || !categories.Any())

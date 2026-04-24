@@ -1,4 +1,5 @@
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Infrastructure.deps.json
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Infrastructure.runtimeconfig.json
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Infrastructure.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Infrastructure.pdb
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Application.dll
@@ -15,6 +16,5 @@ E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTra
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\refint\MoneyTracker.Infrastructure.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.pdb
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\ref\MoneyTracker.Infrastructure.dll
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Infrastructure.runtimeconfig.json
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.genruntimeconfig.cache
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\ref\MoneyTracker.Infrastructure.dll
