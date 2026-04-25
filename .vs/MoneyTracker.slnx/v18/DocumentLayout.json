@@ -7,80 +7,56 @@
       "RelativeMoniker": "D:0:0:{19D160F2-322D-BF2D-DEF9-797DCB918AC0}|MoneyTracker.API\\MoneyTracker.API.csproj|solutionrelative:moneytracker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19D160F2-322D-BF2D-DEF9-797DCB918AC0}|MoneyTracker.API\\MoneyTracker.API.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.api\\controllers\\categoryapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19D160F2-322D-BF2D-DEF9-797DCB918AC0}|MoneyTracker.API\\MoneyTracker.API.csproj|solutionrelative:moneytracker.api\\controllers\\categoryapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\category\\deletecategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\category\\deletecategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\commands\\category\\deletecategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\commands\\category\\deletecategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\category\\updatecategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\category\\updatecategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\commands\\category\\updatecategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\commands\\category\\updatecategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\category\\getsubcategoriesbyparentidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\category\\getsubcategoriesbyparentidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\queries\\category\\getsubcategoriesbyparentidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\queries\\category\\getsubcategoriesbyparentidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\category\\getcategorybyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\category\\getcategorybyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\queries\\category\\getcategorybyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\queries\\category\\getcategorybyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\assemblyreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\assemblyreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\moneytracker.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\moneytracker.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\category\\getallcategoryqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\category\\getallcategoryqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\category\\getparentcategoriesbytypequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\category\\getparentcategoriesbytypequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\queries\\category\\getallcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\queries\\category\\getallcategoriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\queries\\category\\getparentcategoriesbytypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\queries\\category\\getparentcategoriesbytypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{19D160F2-322D-BF2D-DEF9-797DCB918AC0}|MoneyTracker.API\\MoneyTracker.API.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.api\\controllers\\transactionapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19D160F2-322D-BF2D-DEF9-797DCB918AC0}|MoneyTracker.API\\MoneyTracker.API.csproj|solutionrelative:moneytracker.api\\controllers\\transactionapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DDEE3F9-4647-6742-4EBA-A156BA4B1DEF}|MoneyTracker.Infrastructure\\MoneyTracker.Infrastructure.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.infrastructure\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DDEE3F9-4647-6742-4EBA-A156BA4B1DEF}|MoneyTracker.Infrastructure\\MoneyTracker.Infrastructure.csproj|solutionrelative:moneytracker.infrastructure\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\transaction\\gettransactionstoexcelqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\transaction\\gettransactionstoexcelqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DDEE3F9-4647-6742-4EBA-A156BA4B1DEF}|MoneyTracker.Infrastructure\\MoneyTracker.Infrastructure.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DDEE3F9-4647-6742-4EBA-A156BA4B1DEF}|MoneyTracker.Infrastructure\\MoneyTracker.Infrastructure.csproj|solutionrelative:moneytracker.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\queries\\transaction\\gettransactionstoexcelquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\queries\\transaction\\gettransactionstoexcelquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DDEE3F9-4647-6742-4EBA-A156BA4B1DEF}|MoneyTracker.Infrastructure\\MoneyTracker.Infrastructure.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.infrastructure\\migrations\\20260420152111_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DDEE3F9-4647-6742-4EBA-A156BA4B1DEF}|MoneyTracker.Infrastructure\\MoneyTracker.Infrastructure.csproj|solutionrelative:moneytracker.infrastructure\\migrations\\20260420152111_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\transaction\\getamountqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\transaction\\getamountqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\queries\\transaction\\getamountquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\queries\\transaction\\getamountquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\transaction\\updatetransactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\transaction\\updatetransactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\commands\\transaction\\updatetransactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\commands\\transaction\\updatetransactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\transaction\\deletetransactionbyidcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\transaction\\deletetransactionbyidcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\commands\\transaction\\deletetransactionbyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\commands\\transaction\\deletetransactionbyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\commands\\transaction\\createtransactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\commands\\transaction\\createtransactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\transaction\\createtransactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\transaction\\createtransactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\handler\\transaction\\getalltransactionqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\handler\\transaction\\getalltransactionqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|e:\\coding\\csharp\\aspnetcore\\big-project\\clean architecture\\moneytracker\\moneytracker.application\\queries\\transaction\\getalltransactionquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28913ABF-4826-A677-53AD-73FC141433A4}|MoneyTracker.Application\\MoneyTracker.Application.csproj|solutionrelative:moneytracker.application\\queries\\transaction\\getalltransactionquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,85 +66,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoryAPIController.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.API\\Controllers\\CategoryAPIController.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.API\\Controllers\\CategoryAPIController.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.API\\Controllers\\CategoryAPIController.cs",
-              "RelativeToolTip": "MoneyTracker.API\\Controllers\\CategoryAPIController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAiwCkAAAAxAAAAAAAAAA==",
+              "Title": "TransactionAPIController.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.API\\Controllers\\TransactionAPIController.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.API\\Controllers\\TransactionAPIController.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.API\\Controllers\\TransactionAPIController.cs",
+              "RelativeToolTip": "MoneyTracker.API\\Controllers\\TransactionAPIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T17:10:53.32Z",
+              "WhenOpened": "2026-04-24T22:13:51.419Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DeleteCategoryCommandHandler.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\DeleteCategoryCommandHandler.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Category\\DeleteCategoryCommandHandler.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\DeleteCategoryCommandHandler.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Category\\DeleteCategoryCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T18:52:22.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DeleteCategoryCommand.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Commands\\Category\\DeleteCategoryCommand.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Commands\\Category\\DeleteCategoryCommand.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Commands\\Category\\DeleteCategoryCommand.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Commands\\Category\\DeleteCategoryCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T18:51:26.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateCategoryCommandHandler.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\UpdateCategoryCommandHandler.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Category\\UpdateCategoryCommandHandler.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\UpdateCategoryCommandHandler.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Category\\UpdateCategoryCommandHandler.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAEBCwBcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T18:39:45.354Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateCategoryCommand.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Commands\\Category\\UpdateCategoryCommand.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Commands\\Category\\UpdateCategoryCommand.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Commands\\Category\\UpdateCategoryCommand.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Commands\\Category\\UpdateCategoryCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T18:37:08.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetSubCategoriesByParentIdQueryHandler.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\GetSubCategoriesByParentIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Category\\GetSubCategoriesByParentIdQueryHandler.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\GetSubCategoriesByParentIdQueryHandler.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Category\\GetSubCategoriesByParentIdQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T17:00:19.299Z",
               "EditorCaption": ""
             },
             {
@@ -179,175 +90,166 @@
               "RelativeDocumentMoniker": "MoneyTracker.API\\Program.cs",
               "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.API\\Program.cs",
               "RelativeToolTip": "MoneyTracker.API\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAIBCwBgAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBCwAcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T20:37:35.109Z",
+              "WhenOpened": "2026-04-25T21:02:51.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetTransactionsToExcelQueryHandler.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\GetTransactionsToExcelQueryHandler.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Transaction\\GetTransactionsToExcelQueryHandler.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\GetTransactionsToExcelQueryHandler.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Transaction\\GetTransactionsToExcelQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T20:54:23.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetTransactionsToExcelQuery.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Transaction\\GetTransactionsToExcelQuery.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Queries\\Transaction\\GetTransactionsToExcelQuery.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Transaction\\GetTransactionsToExcelQuery.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Queries\\Transaction\\GetTransactionsToExcelQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T20:51:59.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetAmountQueryHandler.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\GetAmountQueryHandler.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Transaction\\GetAmountQueryHandler.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\GetAmountQueryHandler.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Transaction\\GetAmountQueryHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T20:41:50.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetAmountQuery.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Transaction\\GetAmountQuery.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Queries\\Transaction\\GetAmountQuery.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Transaction\\GetAmountQuery.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Queries\\Transaction\\GetAmountQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T20:40:18.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateTransactionCommandHandler.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\UpdateTransactionCommandHandler.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Transaction\\UpdateTransactionCommandHandler.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\UpdateTransactionCommandHandler.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Transaction\\UpdateTransactionCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T18:37:13.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "GetSubCategoriesByParentIdQuery.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Category\\GetSubCategoriesByParentIdQuery.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Queries\\Category\\GetSubCategoriesByParentIdQuery.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Category\\GetSubCategoriesByParentIdQuery.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Queries\\Category\\GetSubCategoriesByParentIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Title": "UpdateTransactionCommand.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Commands\\Transaction\\UpdateTransactionCommand.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Commands\\Transaction\\UpdateTransactionCommand.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Commands\\Transaction\\UpdateTransactionCommand.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Commands\\Transaction\\UpdateTransactionCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T16:51:41.738Z",
+              "WhenOpened": "2026-04-25T18:35:40.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "GetCategoryByIdQueryHandler.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\GetCategoryByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Category\\GetCategoryByIdQueryHandler.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\GetCategoryByIdQueryHandler.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Category\\GetCategoryByIdQueryHandler.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAwCQAAAAIAAAAAAAAAA==",
+              "Title": "DeleteTransactionByIdCommandHandler.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\DeleteTransactionByIdCommandHandler.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Transaction\\DeleteTransactionByIdCommandHandler.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\DeleteTransactionByIdCommandHandler.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Transaction\\DeleteTransactionByIdCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T00:42:10.286Z",
+              "WhenOpened": "2026-04-25T12:00:45.58Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "GetCategoryByIdQuery.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Category\\GetCategoryByIdQuery.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Queries\\Category\\GetCategoryByIdQuery.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Category\\GetCategoryByIdQuery.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Queries\\Category\\GetCategoryByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Title": "DeleteTransactionByIdCommand.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Commands\\Transaction\\DeleteTransactionByIdCommand.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Commands\\Transaction\\DeleteTransactionByIdCommand.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Commands\\Transaction\\DeleteTransactionByIdCommand.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Commands\\Transaction\\DeleteTransactionByIdCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T00:39:24.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GetParentCategoriesByTypeQueryHandler.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\GetParentCategoriesByTypeQueryHandler.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Category\\GetParentCategoriesByTypeQueryHandler.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\GetParentCategoriesByTypeQueryHandler.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Category\\GetParentCategoriesByTypeQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T20:18:05.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GetAllCategoryQueryHandler.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\GetAllCategoryQueryHandler.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Category\\GetAllCategoryQueryHandler.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Category\\GetAllCategoryQueryHandler.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Category\\GetAllCategoryQueryHandler.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAiwB0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T18:44:55.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AssemblyReference.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\AssemblyReference.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\AssemblyReference.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\AssemblyReference.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\AssemblyReference.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T00:54:29.397Z",
+              "WhenOpened": "2026-04-25T11:59:43.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "MoneyTracker.Application.csproj",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\MoneyTracker.Application.csproj",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\MoneyTracker.Application.csproj",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\MoneyTracker.Application.csproj",
-              "RelativeToolTip": "MoneyTracker.Application\\MoneyTracker.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-21T18:41:05.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GetParentCategoriesByTypeQuery.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Category\\GetParentCategoriesByTypeQuery.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Queries\\Category\\GetParentCategoriesByTypeQuery.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Category\\GetParentCategoriesByTypeQuery.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Queries\\Category\\GetParentCategoriesByTypeQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIA8wA0AAAAAAAAAAAAAAA==",
+              "Title": "CreateTransactionCommandHandler.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\CreateTransactionCommandHandler.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Transaction\\CreateTransactionCommandHandler.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\CreateTransactionCommandHandler.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Transaction\\CreateTransactionCommandHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T20:16:06.694Z",
+              "WhenOpened": "2026-04-25T11:23:46.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GetAllCategoriesQuery.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Category\\GetAllCategoriesQuery.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Application\\Queries\\Category\\GetAllCategoriesQuery.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Category\\GetAllCategoriesQuery.cs",
-              "RelativeToolTip": "MoneyTracker.Application\\Queries\\Category\\GetAllCategoriesQuery.cs",
+              "DocumentIndex": 10,
+              "Title": "CreateTransactionCommand.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Commands\\Transaction\\CreateTransactionCommand.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Commands\\Transaction\\CreateTransactionCommand.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Commands\\Transaction\\CreateTransactionCommand.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Commands\\Transaction\\CreateTransactionCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T16:35:13.201Z",
+              "WhenOpened": "2026-04-25T11:16:05.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TransactionService.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Infrastructure\\Services\\TransactionService.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Infrastructure\\Services\\TransactionService.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Infrastructure\\Services\\TransactionService.cs",
-              "RelativeToolTip": "MoneyTracker.Infrastructure\\Services\\TransactionService.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAEBCwNcAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "GetAllTransactionQueryHandler.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\GetAllTransactionQueryHandler.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Handler\\Transaction\\GetAllTransactionQueryHandler.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Handler\\Transaction\\GetAllTransactionQueryHandler.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Handler\\Transaction\\GetAllTransactionQueryHandler.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwBoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T19:03:46.853Z"
+              "WhenOpened": "2026-04-24T22:43:24.93Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20260420152111_Initial.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Infrastructure\\Migrations\\20260420152111_Initial.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Infrastructure\\Migrations\\20260420152111_Initial.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Infrastructure\\Migrations\\20260420152111_Initial.cs",
-              "RelativeToolTip": "MoneyTracker.Infrastructure\\Migrations\\20260420152111_Initial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "GetAllTransactionQuery.cs",
+              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Transaction\\GetAllTransactionQuery.cs",
+              "RelativeDocumentMoniker": "MoneyTracker.Application\\Queries\\Transaction\\GetAllTransactionQuery.cs",
+              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Application\\Queries\\Transaction\\GetAllTransactionQuery.cs",
+              "RelativeToolTip": "MoneyTracker.Application\\Queries\\Transaction\\GetAllTransactionQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T15:21:11.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "MoneyTracker.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T15:20:25.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TransactionAPIController.cs",
-              "DocumentMoniker": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.API\\Controllers\\TransactionAPIController.cs",
-              "RelativeDocumentMoniker": "MoneyTracker.API\\Controllers\\TransactionAPIController.cs",
-              "ToolTip": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.API\\Controllers\\TransactionAPIController.cs",
-              "RelativeToolTip": "MoneyTracker.API\\Controllers\\TransactionAPIController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAxwCIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T15:29:02.271Z"
+              "WhenOpened": "2026-04-24T22:40:48.232Z",
+              "EditorCaption": ""
             }
           ]
         }

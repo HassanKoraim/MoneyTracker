@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using MoneyTracker.Application.DTOs;
 using MoneyTracker.Application.Queries.Category;
 using MoneyTracker.Application.Commands.Category;
-using MoneyTracker.Application.ServiceContracts;
 using MoneyTracker.Domain.Enums;
 
 namespace MoneyTracker.API.Controllers
@@ -13,11 +12,9 @@ namespace MoneyTracker.API.Controllers
     [ApiController]
     public class CategoryAPIController : Controller
     {
-        private readonly ICategoryService _categoryService;
         private readonly IMediator _mediator;
-        public CategoryAPIController(ICategoryService categoryService, IMediator mediator)
+        public CategoryAPIController(IMediator mediator)
         {
-            _categoryService = categoryService;
             _mediator = mediator;
         }
 /*        public IActionResult Index()

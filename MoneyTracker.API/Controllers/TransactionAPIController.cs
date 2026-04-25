@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Linq.Expressions;
 using System.Text.Json;
-using MoneyTracker.Application.ServiceContracts;
 using MoneyTracker.Application.DTOs;
 using MoneyTracker.Domain.Entities;
+using MediatR;
+using MoneyTracker.Application.Queries.Transaction;
+using MoneyTracker.Application.Commands.Transaction;
 
 namespace MoneyTracker.API.Controllers
 {
@@ -11,16 +13,16 @@ namespace MoneyTracker.API.Controllers
     [ApiController]
     public class TransactionAPIController : Controller
     {
-        private readonly ITransactionService _transactionService;
-        public TransactionAPIController(ITransactionService transactionService)
+        private readonly IMediator _mediater;
+        public TransactionAPIController(IMediator mediator)
         {
-            _transactionService = transactionService;
+            _mediater = mediator;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetTransaction(int id)
+        [HttpGet("GetTransactionById{id:int}")]
+        public async Task<IActionResult> GetTransactionById(int id)
         {
-            var transactionDto = await _transactionService.GetById(id);
+            var transactionDto = await _mediater.Send(new GetTransactionByIdQuery(id));
             return Ok(transactionDto);
         }
         // Get All
@@ -33,7 +35,7 @@ namespace MoneyTracker.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> GetAllTransactions(string? sortBy = null,string? sortOrder= null)
         {
-            var transactionDtos = await _transactionService.GetAll(null, sortBy, sortOrder);
+            var transactionDtos = await _mediater.Send(new GetAllTransactionQuery(null, sortBy, sortOrder));
             return Ok(transactionDtos);
         }
         [HttpGet("GetAmount")]
@@ -50,7 +52,7 @@ namespace MoneyTracker.API.Controllers
             {
                 filter = t => t.Id == id;
             }
-            var totalIncome = await _transactionService.GetAmount(filter,transactionType);
+            var totalIncome = await _mediater.Send( new GetAmountQuery(filter,transactionType));
             return Ok(totalIncome);
         }
 
@@ -66,7 +68,7 @@ namespace MoneyTracker.API.Controllers
             {
                 return BadRequest(ModelState);
             }
-            var transactionDto = await _transactionService.Create(transactionCreateDto);
+            var transactionDto = await _mediater.Send(new CreateTransactionCommand(transactionCreateDto));
             return Ok(transactionDto);
         }
         [HttpPut]
@@ -81,18 +83,18 @@ namespace MoneyTracker.API.Controllers
             {
                 return BadRequest(ModelState);
             }
-            var transactionDto = await _transactionService.Update(id, transactionUpdateDto);
+            var transactionDto = await _mediater.Send(new UpdateTransactionCommand(id, transactionUpdateDto));
             return Ok(transactionDto);
         }
-        [HttpDelete]
+        [HttpDelete("DeleteTransaction{id:int}")]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<bool> Delete(int id)
+        public async Task<bool> DeleteTransaction(int id)
         {
-            bool IsDelete = await _transactionService.Delete(id);
+            bool IsDelete = await _mediater.Send(new DeleteTransactionByIdCommand(id));
             return IsDelete;
         }
 
@@ -103,10 +105,10 @@ namespace MoneyTracker.API.Controllers
             {
                 PropertyNameCaseInsensitive = true
             };
-            var transactionList = await _transactionService.GetAll(null, sortBy,sortOrder);
+            var transactionList = await _mediater.Send(new GetAllTransactionQuery(null, sortBy,sortOrder));
                 //JsonSerializer.Deserialize<List<TransactionDto>>(transactions, options);
 
-            MemoryStream memoryStream = await _transactionService.GetTransactionsExcel(transactionList);
+            MemoryStream memoryStream = await _mediater.Send(new GetTransactionsToExcelQuery(transactionList));
             return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "transactions.xlsx");
         }
 

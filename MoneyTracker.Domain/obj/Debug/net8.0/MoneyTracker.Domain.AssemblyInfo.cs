@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoneyTracker.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+836de2838eb92eb626b06b4bcbd749a6e6c933be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68c25fb07e58920b8b17b2e72b235165eb117b53")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoneyTracker.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoneyTracker.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

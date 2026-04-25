@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LULfv8SjYxQ=",
+  "dgSpecHash": "h1atR4O9Sj8=",
   "success": true,
   "projectFilePath": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.API\\MoneyTracker.API.csproj",
   "expectedPackageFiles": [
@@ -105,16 +105,13 @@
   ],
   "logs": [
     {
-      "code": "NU1903",
+      "code": "NU1900",
       "level": "Warning",
-      "message": "Package 'AutoMapper' 12.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
       "projectPath": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.API\\MoneyTracker.API.csproj",
       "warningLevel": 1,
       "filePath": "E:\\Coding\\CSharp\\AspNetCore\\Big-Project\\Clean Architecture\\MoneyTracker\\MoneyTracker.API\\MoneyTracker.API.csproj",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net8.0"
-      ]
+      "targetGraphs": []
     }
   ]
 }

@@ -7,10 +7,8 @@ using MoneyTracker.API;
 using MoneyTracker.Application.Handler.Category;
 using MoneyTracker.Application.Queries.Category;
 using MoneyTracker.Application.RepositoryContracts;
-using MoneyTracker.Application.ServiceContracts;
 using MoneyTracker.Infrastructure.Data;
 using MoneyTracker.Infrastructure.Repositroies;
-using MoneyTracker.Infrastructure.Services;
 using MoneyTracker.Application;
 using System.Text;
 
@@ -24,7 +22,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped(typeof(IRepositoryContracts<>), typeof(Repository<>));
 builder.Services.AddScoped<ICategoriesRepository, CategoriesRepository>();
-builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 
