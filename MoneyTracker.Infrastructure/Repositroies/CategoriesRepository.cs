@@ -14,7 +14,7 @@ namespace MoneyTracker.Infrastructure.Repositroies
             _context = context;
         }
 
-        public async Task<bool> CategoryExists(string categoryName, SD.CategoryType categoryType)
+        public async Task<bool> CategoryExists(string categoryName, SD.CategoryType? categoryType)
         {
             bool isExist =
                 await _context.Categories

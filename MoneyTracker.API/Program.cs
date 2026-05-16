@@ -1,21 +1,23 @@
+using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MoneyTracker.API;
-using MoneyTracker.Application.Handler.Category;
-using MoneyTracker.Application.Queries.Category;
+using MoneyTracker.API.Exceptions;
+using MoneyTracker.Application;
+using MoneyTracker.Application.Behaviors;
 using MoneyTracker.Application.RepositoryContracts;
 using MoneyTracker.Infrastructure.Data;
 using MoneyTracker.Infrastructure.Repositroies;
-using MoneyTracker.Application;
 using System.Text;
 
 
 var builder = WebApplication.CreateBuilder(args);
 /// Add services to the container.
-
+builder.Services.AddProblemDetails();
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -89,7 +91,9 @@ builder.Services.AddMediatR(cfg => {
     cfg.RegisterServicesFromAssembly(typeof(AssemblyReference).Assembly);
     //cfg.RegisterServicesFromAssembly(typeof(GetParentCategoriesByTypeQueryHandler).Assembly);
     //cfg.RegisterServicesFromAssembly(typeof(GetCategoryByIdQueryHandler).Assembly);
-}); 
+});
+builder.Services.AddValidatorsFromAssembly(typeof(AssemblyReference).Assembly);
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -102,7 +106,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseExceptionHandler();
 app.MapControllers();
 
 app.Run();

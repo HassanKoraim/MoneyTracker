@@ -12,8 +12,8 @@
         }
         public enum CategoryType
         {
-            Income ,
-            Expense
+            Income = 0 ,
+            Expense = 1
         }
         public enum TransactionType
         {

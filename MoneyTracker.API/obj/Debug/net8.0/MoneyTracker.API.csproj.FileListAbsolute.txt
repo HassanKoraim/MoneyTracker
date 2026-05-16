@@ -12,10 +12,13 @@ E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTra
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\Azure.Identity.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\EPPlus.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\EPPlus.Interfaces.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\FluentValidation.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\Humanizer.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\MediatR.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\MediatR.Contracts.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
@@ -159,10 +162,10 @@ E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTra
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\staticwebassets.development.json
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\swae.build.ex.cache
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\MoneyTra.46BA096C.Up2Date
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\MoneyTracker.API.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\refint\MoneyTracker.API.dll
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\MoneyTracker.API.pdb
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\MoneyTracker.API.genruntimeconfig.cache
 E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\ref\MoneyTracker.API.dll
+E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

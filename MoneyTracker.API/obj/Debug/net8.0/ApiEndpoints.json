@@ -11,22 +11,6 @@
   },
   {
     "ContainingType": "MoneyTracker.API.Controllers.CategoryAPIController",
-    "Method": "CreateCategory",
-    "RelativePath": "api/CategoryApi",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "MoneyTracker.Application.DTOs.CategoryCreateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MoneyTracker.API.Controllers.CategoryAPIController",
     "Method": "GetCategoryById",
     "RelativePath": "api/CategoryApi/{id}",
     "HttpMethod": "GET",
@@ -43,27 +27,6 @@
   },
   {
     "ContainingType": "MoneyTracker.API.Controllers.CategoryAPIController",
-    "Method": "UpdateCategory",
-    "RelativePath": "api/CategoryApi/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "MoneyTracker.Application.DTOs.CategoryUpdateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MoneyTracker.API.Controllers.CategoryAPIController",
     "Method": "DeleteCategory",
     "RelativePath": "api/CategoryApi/{id}",
     "HttpMethod": "DELETE",
@@ -73,6 +36,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker.API.Controllers.CategoryAPIController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/CategoryApi/CreateCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MoneyTracker.Application.DTOs.CategoryDTOs.CategoryCreateDto",
         "IsRequired": true
       }
     ],
@@ -108,7 +87,7 @@
     "Parameters": [
       {
         "Name": "parentId",
-        "Type": "System.Int32",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": true
       }
     ],
@@ -125,6 +104,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MoneyTracker.API.Controllers.CategoryAPIController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/CategoryApi/UpdateCategory/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MoneyTracker.Application.DTOs.CategoryDTOs.CategoryUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MoneyTracker.API.Controllers.TransactionAPIController",
     "Method": "CreateTransaction",
     "RelativePath": "api/TransactionApi",
@@ -134,7 +134,7 @@
     "Parameters": [
       {
         "Name": "transactionCreateDto",
-        "Type": "MoneyTracker.Application.DTOs.TransactionCreateDto",
+        "Type": "MoneyTracker.Application.DTOs.TransactionDTOs.TransactionCreateDto",
         "IsRequired": true
       }
     ],
@@ -205,7 +205,7 @@
       },
       {
         "Name": "transactionUpdateDto",
-        "Type": "MoneyTracker.Application.DTOs.TransactionUpdateDto",
+        "Type": "MoneyTracker.Application.DTOs.TransactionDTOs.TransactionUpdateDto",
         "IsRequired": true
       }
     ],

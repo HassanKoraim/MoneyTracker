@@ -1,10 +1,15 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using MoneyTracker.Application.DTOs;
-using MoneyTracker.Application.Queries.Category;
-using MoneyTracker.Application.Commands.Category;
+using MoneyTracker.Application.Categories.Commands.DeleteCategory;
+using MoneyTracker.Application.Categories.Commands.UpdateCategory;
+using MoneyTracker.Application.Categories.Queries.GetAllCategories;
+using MoneyTracker.Application.Categories.Queries.GetCategoryById;
+using MoneyTracker.Application.Categories.Queries.GetParentCategories;
+using MoneyTracker.Application.Categories.Queries.GetParentCategoriesByType;
+using MoneyTracker.Application.Categories.Queries.GetSubCategoriesByParentId;
+using MoneyTracker.Application.DTOs.CategoryDTOs;
 using MoneyTracker.Domain.Enums;
+using MoneyTracker.Application.Categories.Commands.CreateCategory;
 
 namespace MoneyTracker.API.Controllers
 {
@@ -36,7 +41,7 @@ namespace MoneyTracker.API.Controllers
             return Ok(categoryDto);
         }
         [HttpGet("parent/{parentId:int}")]
-        public async Task<IActionResult> GetSubCategoriesForParent(int parentId)
+        public async Task<IActionResult> GetSubCategoriesForParent(int? parentId)
         {
             var subCategories = await _mediator.Send(new GetSubCategoriesByParentIdQuery(parentId));
             return Ok(subCategories);
@@ -59,45 +64,19 @@ namespace MoneyTracker.API.Controllers
             var parentCatigories = await _mediator.Send(new GetParentCategoriesByTypeQuery(SD.CategoryType.Expense));
             return Ok(parentCatigories);
         }
-        [HttpPost]
+        [HttpPost("CreateCategory")]
         public async Task<IActionResult> CreateCategory(CategoryCreateDto dto)
         {
-            /* CategoryDto CreatedCategory = await _categoryService.CreateCategory(dto);
-             return Ok(CreatedCategory);*/
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
-
-                var category = await _mediator.Send(new CreateCategoryCommand(dto));
-                //   return CreatedAtAction(nameof(GetCategory), new { id = category.Id }, category);
-                return Ok(category);
-            }
-            catch (ArgumentException ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return Conflict(ex.Message);
-            }
-            catch (Exception ex)
-            {
-              //  _logger.LogError(ex, "Error creating category");
-                return StatusCode(500, "An error occurred while creating the category");
-            }
+            var category = await _mediator.Send(new CreateCategoryCommand(dto));
+            return Ok(category);
         }
-
-        [HttpPut("{id:int}")]
+        [HttpPut("UpdateCategory/{id:int}")]
         public async Task<IActionResult> UpdateCategory(int id, CategoryUpdateDto dto)
         {
             CategoryDto? categoryDto = await _mediator.Send(new UpdateCategoryCommand(id, dto));
             if (categoryDto == null) return BadRequest();
             return Ok(categoryDto); 
         }
-
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {

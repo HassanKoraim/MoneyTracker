@@ -15,8 +15,8 @@ namespace MoneyTracker.Domain.Entities
         [Required]
         public int SubcategoryId { get; set; }
 
-        [Required]
-        public CategoryType Type { get; set; }  // Income or Expense
+     //   [Required]
+        public CategoryType? Type { get; set; }  // Income or Expense
 
         // Self-referencing foreign key for subcategories
         public int? ParentCategoryId { get; set; }
