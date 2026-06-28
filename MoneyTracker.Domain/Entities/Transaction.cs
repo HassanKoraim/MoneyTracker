@@ -15,7 +15,7 @@ namespace MoneyTracker.Domain.Entities
         public decimal Amount { get; set; }
 
         [Required]
-        public TransactionType transactionType {  get; set; }
+        public CategoryType? transactionType {  get; set; }
         [Required]
         [StringLength(100)]
         public string Description { get; set; } = string.Empty;

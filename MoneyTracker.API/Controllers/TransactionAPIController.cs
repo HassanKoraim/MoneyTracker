@@ -1,16 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Linq.Expressions;
-using System.Text.Json;
-using MoneyTracker.Domain.Entities;
-using MediatR;
-using MoneyTracker.Application.Transactions.Queries.GetTransactionById;
-using MoneyTracker.Application.Transactions.Queries.GetAllTransaction;
-using MoneyTracker.Application.Transactions.Queries.GetAmount;
-using MoneyTracker.Application.Transactions.Queries.GetTransactionsToExcel;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
+using MoneyTracker.Application.DTOs.TransactionDTOs;
 using MoneyTracker.Application.Transactions.Commands.CreateTransaction;
 using MoneyTracker.Application.Transactions.Commands.DeleteTransactionById;
 using MoneyTracker.Application.Transactions.Commands.UpdateTransaction;
-using MoneyTracker.Application.DTOs.TransactionDTOs;
+using MoneyTracker.Application.Transactions.Queries.GetAllTransaction;
+using MoneyTracker.Application.Transactions.Queries.GetAmount;
+using MoneyTracker.Application.Transactions.Queries.GetTransactionById;
+using MoneyTracker.Application.Transactions.Queries.GetTransactionsToExcel;
+using MoneyTracker.Domain.Entities;
+using System.Linq.Expressions;
+using System.Text.Json;
 
 namespace MoneyTracker.API.Controllers
 {
@@ -69,10 +70,6 @@ namespace MoneyTracker.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> CreateTransaction(TransactionCreateDto transactionCreateDto)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
             var transactionDto = await _mediater.Send(new CreateTransactionCommand(transactionCreateDto));
             return Ok(transactionDto);
         }

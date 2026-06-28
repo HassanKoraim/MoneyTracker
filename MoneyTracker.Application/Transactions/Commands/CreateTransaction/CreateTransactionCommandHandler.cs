@@ -9,33 +9,29 @@ namespace MoneyTracker.Application.Transactions.Commands.CreateTransaction
     public class CreateTransactionCommandHandler : IRequestHandler<CreateTransactionCommand, TransactionDto>
     {
         private readonly ITransactionRepository _repo;
+        private readonly ICategoriesRepository _categoryRepo;
         private readonly IMapper _mapper;
-        public CreateTransactionCommandHandler(ITransactionRepository repo, IMapper mapper)
+        public CreateTransactionCommandHandler(ITransactionRepository repo, ICategoriesRepository categoryRepo, IMapper mapper)
         {
             _repo = repo;
+            _categoryRepo = categoryRepo;
             _mapper = mapper;
         }
         public async Task<TransactionDto> Handle(CreateTransactionCommand request, CancellationToken cancellationToken)
         {
-            if (request.transactionCreateDto == null)
+            Category? category = await _categoryRepo.Get(c => c.Id == request.transactionCreateDto.CategoryId);
+            if(category == null)
             {
-                throw new ArgumentNullException(nameof(request.transactionCreateDto));
+                throw new KeyNotFoundException(nameof(category));
             }
-            if (request.transactionCreateDto.Amount <= 0)
-            {
-                throw new ArgumentException("Amount must be greater than zero");
-            }
-            if (request.transactionCreateDto.CategoryId <= 0)
-            {
-                throw new ArgumentException("CategoryId must be greater than zero");
-            }
-            if (request.transactionCreateDto.PaymentMethodId <= 0)
-            {
-                throw new ArgumentException("PaymentMethodId must be greater than zero");
-            }
-            var transaction = _mapper.Map<Domain.Entities.Transaction>(request.transactionCreateDto);
+            var transaction = _mapper.Map<Transaction>(request.transactionCreateDto);
+            transaction.CategoryId = category.Id;
+            transaction.transactionType = category.Type;
+            transaction.CreatedAt = DateTime.UtcNow;
             var transactionCreated = await _repo.Create(transaction);
-            return _mapper.Map<TransactionDto>(transactionCreated);
+            TransactionDto transactionDto = _mapper.Map<TransactionDto>(transactionCreated);
+            transactionDto.CategoryName = category.Name;
+            return transactionDto;
         }
     }
 }

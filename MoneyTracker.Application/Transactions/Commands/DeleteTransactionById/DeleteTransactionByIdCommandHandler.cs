@@ -19,14 +19,10 @@ namespace MoneyTracker.Application.Transactions.Commands.DeleteTransactionById
 
         public async Task<bool> Handle(DeleteTransactionByIdCommand request, CancellationToken cancellationToken)
         {
-            if (request.id <= 0)
-            {
-                throw new ArgumentException("Id can't be less than or equal Zero");
-            }
             var transaction = await _repo.Get(t => t.Id == request.id);
             if (transaction == null)
             {
-                throw new ArgumentNullException("We can't found the Transaction");
+                throw new KeyNotFoundException("We can't found the Transaction");
             }
             return await _repo.Delete(transaction);
         }

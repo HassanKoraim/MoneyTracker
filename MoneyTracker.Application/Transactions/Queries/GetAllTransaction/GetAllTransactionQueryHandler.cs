@@ -2,6 +2,7 @@
 using MediatR;
 using MoneyTracker.Application.DTOs.TransactionDTOs;
 using MoneyTracker.Application.RepositoryContracts;
+using MoneyTracker.Domain.Entities;
 using System.Globalization;
 
 namespace MoneyTracker.Application.Transactions.Queries.GetAllTransaction
@@ -41,10 +42,10 @@ namespace MoneyTracker.Application.Transactions.Queries.GetAllTransaction
             // 3. Return the sorted list
             return (sortBy, order) switch
             {
-                (nameof(Domain.Entities.Transaction.Amount), "asc") => transactions.OrderBy(t => t.Amount).ToList(),
-                (nameof(Domain.Entities.Transaction.Amount), "desc") => transactions.OrderByDescending(t => t.Amount).ToList(),
-                (nameof(Domain.Entities.Transaction.TransactionDate), "asc") => transactions.OrderBy(t => t.TransactionDate).ToList(),
-                (nameof(Domain.Entities.Transaction.TransactionDate), "desc") => transactions.OrderByDescending(t => t.TransactionDate).ToList(),
+                (nameof(Transaction.Amount), "asc") => transactions.OrderBy(t => t.Amount).ToList(),
+                (nameof(Transaction.Amount), "desc") => transactions.OrderByDescending(t => t.Amount).ToList(),
+                (nameof(Transaction.TransactionDate), "asc") => transactions.OrderBy(t => t.TransactionDate).ToList(),
+                (nameof(Transaction.TransactionDate), "desc") => transactions.OrderByDescending(t => t.TransactionDate).ToList(),
                 _ => transactions // Default: No sorting
             };
         }
