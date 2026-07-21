@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using MoneyTracker.Application.DTOs;
@@ -10,6 +11,7 @@ namespace MoneyTracker.API.Controllers
 {
     [Route("api/CategoryApi")]
     [ApiController]
+    [Authorize]
     public class CategoryAPIController : Controller
     {
         private readonly ICategoryService _categoryService;

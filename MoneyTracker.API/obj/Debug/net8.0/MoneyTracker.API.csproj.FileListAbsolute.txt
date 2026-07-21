@@ -332,3 +332,4 @@ E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTra
 /home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.API/obj/Debug/net8.0/MoneyTracker.API.pdb
 /home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.API/obj/Debug/net8.0/MoneyTracker.API.genruntimeconfig.cache
 /home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.API/obj/Debug/net8.0/ref/MoneyTracker.API.dll
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.API/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

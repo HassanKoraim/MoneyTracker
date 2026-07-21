@@ -10,7 +10,7 @@
         "projectUniqueName": "/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Application/MoneyTracker.Application.csproj",
         "projectName": "MoneyTracker.Application",
         "projectPath": "/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Application/MoneyTracker.Application.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
+        "packagesPath": "/tmp/codeql-scratch-da5f0da379cd5740/dbs/csharp/working/packages",
         "outputPath": "/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -70,6 +70,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.28, 8.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.28, 8.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -85,7 +95,7 @@
         "projectUniqueName": "/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Domain/MoneyTracker.Domain.csproj",
         "projectName": "MoneyTracker.Domain",
         "projectPath": "/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Domain/MoneyTracker.Domain.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
+        "packagesPath": "/tmp/codeql-scratch-da5f0da379cd5740/dbs/csharp/working/packages",
         "outputPath": "/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -124,6 +134,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -137,6 +151,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.28, 8.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.28, 8.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -152,7 +176,7 @@
         "projectUniqueName": "/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/MoneyTracker.Infrastructure.csproj",
         "projectName": "MoneyTracker.Infrastructure",
         "projectPath": "/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/MoneyTracker.Infrastructure.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
+        "packagesPath": "/tmp/codeql-scratch-da5f0da379cd5740/dbs/csharp/working/packages",
         "outputPath": "/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -203,6 +227,10 @@
               "target": "Package",
               "version": "[8.5.3, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -227,6 +255,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.28, 8.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.28, 8.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Linq.Expressions;
 using System.Text.Json;
 using MoneyTracker.Application.ServiceContracts;
@@ -9,6 +10,7 @@ namespace MoneyTracker.API.Controllers
 {
     [Route("api/TransactionApi")]
     [ApiController]
+    [Authorize]
     public class TransactionAPIController : Controller
     {
         private readonly ITransactionService _transactionService;
