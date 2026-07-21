@@ -1,20 +1,39 @@
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Infrastructure.deps.json
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Infrastructure.dll
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Infrastructure.pdb
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Application.dll
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Domain.dll
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Application.pdb
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Domain.pdb
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.csproj.AssemblyReference.cache
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.AssemblyInfoInputs.cache
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.AssemblyInfo.cs
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.csproj.CoreCompileInputs.cache
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.sourcelink.json
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTra.14B1B5CD.Up2Date
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.dll
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\refint\MoneyTracker.Infrastructure.dll
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.pdb
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\ref\MoneyTracker.Infrastructure.dll
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\bin\Debug\net8.0\MoneyTracker.Infrastructure.runtimeconfig.json
-E:\Coding\CSharp\AspNetCore\Big-Project\Clean Architecture\MoneyTracker\MoneyTracker.Infrastructure\obj\Debug\net8.0\MoneyTracker.Infrastructure.genruntimeconfig.cache
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Infrastructure.deps.json
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Infrastructure.dll
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Infrastructure.pdb
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Application.dll
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Domain.dll
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Application.pdb
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Domain.pdb
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.csproj.AssemblyReference.cache
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.AssemblyInfoInputs.cache
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.AssemblyInfo.cs
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.csproj.CoreCompileInputs.cache
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.sourcelink.json
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTra.14B1B5CD.Up2Date
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.dll
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/refint/MoneyTracker.Infrastructure.dll
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.pdb
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/ref/MoneyTracker.Infrastructure.dll
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Infrastructure.runtimeconfig.json
+E:/Coding/CSharp/AspNetCore/Big-Project/Clean Architecture/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.genruntimeconfig.cache
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Infrastructure.deps.json
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Infrastructure.runtimeconfig.json
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Infrastructure.dll
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Infrastructure.pdb
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Application.dll
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Domain.dll
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Application.pdb
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/bin/Debug/net8.0/MoneyTracker.Domain.pdb
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.csproj.AssemblyReference.cache
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.AssemblyInfoInputs.cache
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.AssemblyInfo.cs
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.csproj.CoreCompileInputs.cache
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTra.14B1B5CD.Up2Date
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.dll
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/refint/MoneyTracker.Infrastructure.dll
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.pdb
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/MoneyTracker.Infrastructure.genruntimeconfig.cache
+/home/runner/work/MoneyTracker/MoneyTracker/MoneyTracker.Infrastructure/obj/Debug/net8.0/ref/MoneyTracker.Infrastructure.dll
