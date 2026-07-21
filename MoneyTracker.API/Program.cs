@@ -1,5 +1,6 @@
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -8,6 +9,7 @@ using MoneyTracker.Application.Handler.Category;
 using MoneyTracker.Application.Queries.Category;
 using MoneyTracker.Application.RepositoryContracts;
 using MoneyTracker.Application.ServiceContracts;
+using MoneyTracker.Domain.Entities;
 using MoneyTracker.Infrastructure.Data;
 using MoneyTracker.Infrastructure.Repositroies;
 using MoneyTracker.Infrastructure.Services;
@@ -32,6 +34,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnection")));
 
 var key = builder.Configuration.GetValue<string>("ApiSettings:Secret");
+if (string.IsNullOrWhiteSpace(key))
+{
+    throw new InvalidOperationException("ApiSettings:Secret is missing.");
+}
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -51,6 +62,7 @@ builder.Services.AddAuthentication(x =>
      };
 
  });
+builder.Services.AddAuthorization();
 builder.Services.AddControllers(option =>
 {
     //option.ReturnHttpNotAcceptable = true;
@@ -103,6 +115,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
