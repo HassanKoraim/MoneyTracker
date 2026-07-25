@@ -10,11 +10,13 @@ using MoneyTracker.Application.Categories.Queries.GetSubCategoriesByParentId;
 using MoneyTracker.Application.DTOs.CategoryDTOs;
 using MoneyTracker.Domain.Enums;
 using MoneyTracker.Application.Categories.Commands.CreateCategory;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MoneyTracker.API.Controllers
 {
     [Route("api/CategoryApi")]
     [ApiController]
+    [Authorize(Roles = nameof(SD.RoleType.Admin))]
     public class CategoryAPIController : Controller
     {
         private readonly IMediator _mediator;
@@ -22,10 +24,6 @@ namespace MoneyTracker.API.Controllers
         {
             _mediator = mediator;
         }
-/*        public IActionResult Index()
-        {
-            return View();
-        }*/
         [HttpGet]
         public async Task<IActionResult> GetCategories()
         {

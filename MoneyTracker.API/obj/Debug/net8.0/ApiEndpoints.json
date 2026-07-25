@@ -511,5 +511,37 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker.API.Controllers.UserAPIController",
+    "Method": "Login",
+    "RelativePath": "api/UserController/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MoneyTracker.Application.DTOs.UserDTOs.LoginUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoneyTracker.API.Controllers.UserAPIController",
+    "Method": "Register",
+    "RelativePath": "api/UserController/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MoneyTracker.Application.DTOs.UserDTOs.RegisterUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

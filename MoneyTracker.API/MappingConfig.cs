@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using MoneyTracker.Application.DTOs.CategoryDTOs;
 using MoneyTracker.Application.DTOs.TransactionDTOs;
+using MoneyTracker.Application.DTOs.UserDTOs;
 using MoneyTracker.Domain.Entities;
+using MoneyTracker.Domain.Entities.Identity;
 
 namespace MoneyTracker.API
 {
@@ -21,6 +23,7 @@ namespace MoneyTracker.API
             CreateMap<TransactionCreateDto, Transaction>().ReverseMap();
             //.ForMember(dest => dest.PaymentMethodId, opt => opt.MapFrom(src => src.PaymentMethodId));
             CreateMap<TransactionUpdateDto, Transaction>().ReverseMap();
+            CreateMap<RegisterUserDto, User>().ReverseMap();
         }
     }
 }

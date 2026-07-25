@@ -1,6 +1,7 @@
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -37,7 +38,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped(typeof(IRepositoryContracts<>), typeof(Repository<>));
 builder.Services.AddScoped<ICategoriesRepository, CategoriesRepository>();
 builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
+builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
+
+//builder.Services.AddIdentityApiEndpoints<IdentityUser>()
+//    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnection")));
@@ -52,13 +57,12 @@ builder.Services.AddRateLimiter(options =>
             factory: partition => new FixedWindowRateLimiterOptions
             {
                 AutoReplenishment = true,
-                PermitLimit = 10,
-                QueueLimit = 0,
+                PermitLimit = 20,
+                QueueLimit = 20,
                 Window = TimeSpan.FromMinutes(1)
             }));
     options.RejectionStatusCode = 429;  // Too Many Requests
 });
-var key = builder.Configuration.GetValue<string>("ApiSettings:Secret");
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -71,10 +75,14 @@ builder.Services.AddAuthentication(x =>
      x.SaveToken = true;
      x.TokenValidationParameters = new TokenValidationParameters
      {
-         ValidateIssuerSigningKey = true,
-         IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key)),
-         ValidateIssuer = false,
-         ValidateAudience = false
+         ValidateIssuer = true,
+         ValidIssuer = builder.Configuration.GetValue<string>("AppSettings:Issuer"),
+         ValidateAudience = true,
+         ValidAudience = builder.Configuration.GetValue<string>("AppSettings:Audience"),
+         ValidateLifetime = true,
+         IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(
+             builder.Configuration.GetValue<string>("AppSettings:Token")!)),
+         ValidateIssuerSigningKey = true
      };
 
  });
@@ -130,6 +138,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+//app.MapIdentityApi<IdentityUser>();
 
 app.UseHttpsRedirection();
 app.UseRouting();
